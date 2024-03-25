@@ -1,7 +1,7 @@
 # IEEE Security and Privacy Workshop (DLSP) 2024: Mitigating Deep Reinforcement Learning Backdoors in the Neural Activation Space
 ## Atari Breakout Experiments: Section 4
 
-This repo contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
+This repository contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
 
 The state space consists of a concatenated image frames. The trigger is a 3x5 image inserted on the tile space of the Atari Breakout Game. The backdoor policy has been trained to a level so that in absense of trigger the policy consistently achieves high score against the oppenent while in presence of trigger it takes 'no move' action eventually achieving a very low score on average.
 
