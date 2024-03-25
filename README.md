@@ -1,7 +1,7 @@
 # IEEE Security and Privacy Workshop (DLSP) 2024: Mitigating Deep Reinforcement Learning Backdoors in the Neural Activation Space
 ## Atari Breakout Experiments: Section 4
 
-This directory contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
+This repo contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
 
 The state space consists of a concatenated image frames. The trigger is a 3x5 image inserted on the tile space of the Atari Breakout Game. The backdoor policy has been trained to a level so that in absense of trigger the policy consistently achieves high score against the oppenent while in presence of trigger it takes 'no move' action eventually achieving a very low score on average.
 
@@ -86,7 +86,7 @@ Run the visualize file, and edit the "visualize.py" file and "crossings.py" code
 python3 -m scripts.visualize --env MiniGrid-LavaCrossingS9N1-v0 --model DSLP_Crossings_Trigger_60k_256_neurons --episodes 1000
 ```
 
-To run the training file from scratch , and edit the "visualize.py" file and "crossings.py" code according to the data you want to collect (Non-triggered/Triggered, Goal in field of view, Trigger in field of view, Thresholding Detector Algorithm)(Trigger on/Non-Trigger off). The train.py file will save all model outputs to the ```Minigrid/minigrid/torch-ac/rl-starter-files/storage``` folder. This model can then be accessed in the visualize.py file above 
+To run the training file from scratch, and edit the "visualize.py" file and "crossings.py" code according to the data you want to collect (Non-triggered/Triggered, Goal in field of view, Trigger in field of view, Thresholding Detector Algorithm)(Trigger on/Non-Trigger off). The train.py file will save all model outputs to the ```Minigrid/minigrid/torch-ac/rl-starter-files/storage``` folder. This model can then be accessed in the visualize.py file above 
 ```python
 python3 -m scripts.train --algo ppo --env MiniGrid-LavaCrossingS9N1-v0  --model model_name --save-interval 10 --frames 60000000
 
