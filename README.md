@@ -1,4 +1,20 @@
-# IEEE Security and Privacy Workshop (DLSP) 2024: Mitigating Deep Reinforcement Learning Backdoors in the Neural Activation Space
+
+
+
+When citing our work, please use the following reference: 
+
+```
+@inproceedings{vyas2024mitigating,
+  title={Mitigating Deep Reinforcement Learning Backdoors in the Neural Activation Space},
+  author={Vyas, Sanyam and Hicks, Chris and Mavroudis, Vasilios},
+  booktitle={2024 IEEE Security and Privacy Workshops (SPW)},
+  pages={76--86},
+  year={2024},
+  organization={IEEE}
+}
+```
+
+## IEEE Security and Privacy Workshop (DLSP) 2024: Mitigating Deep Reinforcement Learning Backdoors in the Neural Activation Space
 ## Atari Breakout Experiments: Section 4
 
 This repository contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
